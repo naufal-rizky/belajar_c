@@ -52,5 +52,8 @@ int main()
             printf("NILAI LUAS              : %.2f\n", l);
             printf("NILAI KELILING          : %.2f\n", k);
             break;
+        default:
+            printf("Pilihan Tidak Valid\n");
+            break;
     }
 }
