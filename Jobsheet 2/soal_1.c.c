@@ -3,7 +3,7 @@
 int main()
 {
     int menu, jumlah_barang;
-    float pembelian, diskon, bayar, harga;
+    float pembelian, diskon, harga;
 
     printf("PILIHAN MENU\n");
     printf("[1] BAKSO\n");
@@ -24,15 +24,15 @@ int main()
             harga       = 10000;
             pembelian   = harga * jumlah_barang;
 
-            if(pembelian >= 10000)
+            if(pembelian >= 100000)
             {
-                diskon  = 0.05 * pembelian;
-                bayar   = pembelian - diskon;
+                diskon      = (pembelian * 5) / 100;
+                pembelian   = pembelian - diskon;
             }
 
             printf("TOTAL PEMBELIAN     : Rp%.f\n", pembelian);
             printf("JUMLAH DISKON       : Rp%.f\n", diskon);
-            printf("TOTAL BAYAR         : Rp%.f\n", bayar);
+            printf("TOTAL BAYAR         : Rp%.f\n", pembelian);
             break;
         case 2:
             system("cls");
@@ -43,15 +43,15 @@ int main()
             harga       = 15000;
             pembelian   = harga * jumlah_barang;
 
-            if(pembelian >= 10000)
+            if(pembelian >= 100000)
             {
-                diskon  = 0.05 * pembelian;
-                bayar   = pembelian - diskon;
+                diskon      = (pembelian * 5) / 100;
+                pembelian   = pembelian - diskon;
             }
 
             printf("TOTAL PEMBELIAN     : Rp%.f\n", pembelian);
             printf("JUMLAH DISKON       : Rp%.f\n", diskon);
-            printf("TOTAL BAYAR         : Rp%.f\n", bayar);
+            printf("TOTAL BAYAR         : Rp%.f\n", pembelian);
             break;
         case 3:
             system("cls");
@@ -62,15 +62,15 @@ int main()
             harga       = 20000;
             pembelian   = harga * jumlah_barang;
 
-            if(pembelian >= 10000)
+            if(pembelian >= 100000)
             {
-                diskon  = 0.05 * pembelian;
-                bayar   = pembelian - diskon;
+                diskon      = (pembelian * 5) / 100;
+                pembelian   = pembelian - diskon;;
             }
 
             printf("TOTAL PEMBELIAN     : Rp%.f\n", pembelian);
             printf("JUMLAH DISKON       : Rp%.f\n", diskon);
-            printf("TOTAL BAYAR         : Rp%.f\n", bayar);
+            printf("TOTAL BAYAR         : Rp%.f\n", pembelian);
             break;
         case 4:
             system("cls");
@@ -81,15 +81,15 @@ int main()
             harga       = 10000;
             pembelian   = harga * jumlah_barang;
 
-            if(pembelian >= 10000)
+            if(pembelian >= 100000)
             {
-                diskon  = 0.05 * pembelian;
-                bayar   = pembelian - diskon;
+                diskon      = (pembelian * 5) / 100;
+                pembelian   = pembelian - diskon;
             }
 
             printf("TOTAL PEMBELIAN     : Rp%.f\n", pembelian);
             printf("JUMLAH DISKON       : Rp%.f\n", diskon);
-            printf("TOTAL BAYAR         : Rp%.f\n", bayar);
+            printf("TOTAL BAYAR         : Rp%.f\n", pembelian);
             break;
         default:
             printf("Pilihan Tidak Valid");
