@@ -46,8 +46,8 @@ int main()
             printf("Masukan Nilai Radius    : ");
             scanf("%f", &r);
 
-            l   = 2 * phi * r;
-            k   = phi * r * r;
+            k   = 2 * phi * r;
+            l   = phi * r * r;
 
             printf("NILAI LUAS              : %.2f\n", l);
             printf("NILAI KELILING          : %.2f\n", k);
