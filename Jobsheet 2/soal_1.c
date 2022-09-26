@@ -22,11 +22,11 @@ int main()
             if(pembelian >= 100000)
             {
                 diskon          = (pembelian * 5) / 100;
-                pembelian       = pembelian - diskon;
+                bayar           = pembelian - diskon;
             }
             printf("TOTAL PEMBELIAN     : Rp%.f\n", pembelian);
             printf("JUMLAH DISKON       : Rp%.f\n", diskon);
-            printf("TOTAL BAYAR         : Rp%.f\n", pembelian);
+            printf("TOTAL BAYAR         : Rp%.f\n", bayar);
             break;
         case 2:
             system("cls");
