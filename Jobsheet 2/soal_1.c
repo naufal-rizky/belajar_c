@@ -3,6 +3,7 @@ int main()
 {
     int menu, jumlah_barang;
     float pembelian, diskon, harga, bayar;
+    
     printf("PILIHAN MENU\n");
     printf("[1] BAKSO\n");
     printf("[2] SOTO\n");
@@ -22,8 +23,9 @@ int main()
             if(pembelian >= 100000)
             {
                 diskon          = (pembelian * 5) / 100;
-                bayar           = pembelian - diskon;
             }
+                bayar           = pembelian - diskon;
+                
             printf("TOTAL PEMBELIAN     : Rp%.f\n", pembelian);
             printf("JUMLAH DISKON       : Rp%.f\n", diskon);
             printf("TOTAL BAYAR         : Rp%.f\n", bayar);
@@ -37,9 +39,10 @@ int main()
             pembelian   = harga * jumlah_barang;
             if(pembelian >= 100000)
             {
-                diskon      = (pembelian * 5) / 100;
-                bayar       = pembelian - diskon;
+                diskon      = (pembelian * 5) / 100;    
             }
+                bayar       = pembelian - diskon;
+
             printf("TOTAL PEMBELIAN     : Rp%.f\n", pembelian);
             printf("JUMLAH DISKON       : Rp%.f\n", diskon);
             printf("TOTAL BAYAR         : Rp%.f\n", bayar);
@@ -54,8 +57,9 @@ int main()
             if(pembelian >= 100000)
             {
                 diskon      = (pembelian * 5) / 100;
-                bayar       = pembelian - diskon;
+            
             }
+                bayar       = pembelian - diskon;
             printf("TOTAL PEMBELIAN     : Rp%.f\n", pembelian);
             printf("JUMLAH DISKON       : Rp%.f\n", diskon);
             printf("TOTAL BAYAR         : Rp%.f\n", bayar);
@@ -70,8 +74,9 @@ int main()
             if(pembelian >= 100000)
             {
                 diskon      = (pembelian * 5) / 100;
-                bayar   = pembelian - diskon;
             }
+                bayar       = pembelian - diskon;
+
             printf("TOTAL PEMBELIAN     : Rp%.f\n", pembelian);
             printf("JUMLAH DISKON       : Rp%.f\n", diskon);
             printf("TOTAL BAYAR         : Rp%.f\n", bayar);
