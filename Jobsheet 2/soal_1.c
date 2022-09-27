@@ -57,7 +57,6 @@ int main()
             if(pembelian >= 100000)
             {
                 diskon      = (pembelian * 5) / 100;
-            
             }
                 bayar       = pembelian - diskon;
             printf("TOTAL PEMBELIAN     : Rp%.f\n", pembelian);
