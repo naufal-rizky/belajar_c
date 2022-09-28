@@ -8,5 +8,5 @@ int main()
     {
         printf("%d\n", num);
         num++;
-    } while (num < 10);   
+    } while (num <= 10);   
 }
