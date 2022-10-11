@@ -5,7 +5,7 @@ void sort(int [], int);
 // fungsi utama yang akan dijalankan
 int main()
 {
-    // inisialisasi data
+    // deklarasi data
     int i;
     int data[7];
 
