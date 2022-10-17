@@ -1,54 +1,31 @@
 #include <stdio.h>
 
-void sort(int [], int);
-
-// fungsi utama yang akan dijalankan
 int main()
 {
-    // inisialisasi data
-    int i;
     int data[7];
+    int i;
+    int n = sizeof(data) / sizeof(data[0]);
 
-    // menampung panjang array
-    int length  = sizeof(data) / sizeof(data[0]);
-
-    // input data array
-    for(i = 0; i < length; i++){
-        printf("masukan data ke-%d : ", i+1);
+    for(i = 0; i < n; i++){
+        printf("masukan nilai ke-%d : ", i+1);
         scanf("%d", &data[i]);
     }
 
-    // menampoilkan data sebelum diurutkan
-    printf("\ndata array sebelum di urutkan : \n");
-    for(i = 0; i < length; i++){
-        printf("%d ", data[i]);
-    }
-    
-    // memanggil fungsi sort
-    sort(data, length);
-
-    // menampilkan data array setelah diurutkan
-    printf("\ndata array setelah di urutkan : \n");
-    for(i = 0; i < length; i++){
-        printf("%d ", data[i]);
-    }
+    minMax(data, n);
 }
 
-// fungsi untuk mengurutkan data dari besar ke kecil
-void sort(int a[], int jumlah)
+int minMax(int a[], int n)
 {
-    // inisialisasi data
-    int i, j, box;
+    int min, max, i;
+    min = max = a[0];
 
-    // perulangan i dan j
-    for(i = 0; i < jumlah-1; i++){
-        for(j = i + 1; j < jumlah; j++){
-            // tukar data
-            if(a[i] < a[j]){
-                box     = a[i];
-                a[i]    = a[j];
-                a[j]    = box;  
-            }
-        }
+    for(i = 1; i < n; i++){
+        if(min > a[i])
+            min = a[i];
+        if(max < a[i])
+            max = a[i];
     }
+
+    printf("nilai tertinggi : %d", max);
+    printf("\nnilai terendah  : %d", min);
 }

@@ -11,9 +11,8 @@ int main()
     int i;
     int n   = sizeof(data) / sizeof(data[0]);
 
-    // untuk membersihkan cmd
+    // 
     system("cls");
-    printf("Masukan Angka untuk Array\n");
     // loop untuk input data
     for(i = 0; i < n; i++){
         printf("masukan data ke-%d : ", i+1);
