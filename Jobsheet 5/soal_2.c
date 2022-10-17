@@ -2,6 +2,8 @@
 
 int main()
 {
+    // deklarasi data
+    int i;
     int data[7];
     int i;
     int n = sizeof(data) / sizeof(data[0]);
