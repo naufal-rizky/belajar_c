@@ -1,36 +1,25 @@
 #include <stdio.h>
 #include <string.h>
+#define MAKS 256
 
-int palindrom(char *, int, int);
+int palindrom(char [], char []);
 
 int main()
 {
-    char text[20];
-    int i = 0;
-    int n = sizeof(text)/sizeof(text[0]);
-
-    printf("Masukan Kata / Kalimat : ");
-    scanf("%s", text);
-
-    if(palindrom(text, i, strlen(text) - 1)){
-        printf("%s adalah palindrom", text);
-    }
-    else
-    {
-        printf("%s bukan palindrom", text);
-    }
+    char teks[MAKS], copy[MAKS];
+    printf("masukan kata / kalimat : ");
+    gets(teks);
+    palindrom(teks, copy);
 }
 
-int palindrom(char *txt, int x, int y)
+int palindrom(char a[], char b[])
 {
-    if(NULL == txt || x < 0 || y < 0){
-        return 0;
+    strcpy(b, a);
+    strrev(b);
+
+    if(strcmp(a, b) == 0 ){
+        printf("%s adalah palindrom", a);
+    }else{
+        printf("%s bukan  palindrom", a);
     }
-    if(x >= y){
-        return 1;
-    }
-    if(txt[x] == txt[y]){
-        return palindrom(txt, x+1, y-1);
-    }
-    return 0;
 }
