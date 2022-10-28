@@ -28,11 +28,11 @@ void structParam(struct date *a)
     {
         printf("Data ke-%d\n", i + 1);
         printf("Masukan Tanggal (dd-mm-yyyy) : ");
-        scanf("%d-%d-%d", &input[i].day, &input[i].month, &input[i].year);
+        scanf("%d-%d-%d", &a[i].day, &a[i].month, &a[i].year);
     }
     printf("\n\nData Inputan Tanggal\n");
     for (int i = 0; i < 5; i++)
     {
-        printf("Tanggal ke-%d : %d-%d-%d\n", i + 1, input[i].day, input[i].month, input[i].year);
+        printf("Tanggal ke-%d : %d-%d-%d\n", i + 1, a[i].day, a[i].month, a[i].year);
     }
 }
