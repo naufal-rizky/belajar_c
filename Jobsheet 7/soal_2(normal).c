@@ -2,13 +2,17 @@
 
 struct date
 {
-    int day, month, year;
+    int day;
+    int month;
+    int year;
 };
 
-struct date input[30];
+// struct date input[30]; // bersifat global
 
 int main()
 {
+    // membuat variable struct yang bersifat lokal
+    struct date input[30];
     char opt;
 
     do
@@ -37,4 +41,3 @@ int main()
 
     return 0;
 }
-    
