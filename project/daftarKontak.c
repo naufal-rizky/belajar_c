@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <windows.h>
 
 struct Kontak
 {
@@ -13,6 +14,7 @@ int panjang = 0;
 
 int main()
 {
+    system("cls");
     int pilihan;
     menu:
     printf("\nMENU DAFTAR KONTAK\n\n");
@@ -74,32 +76,15 @@ void tambah_kontak()
         ++panjang;
 
         printf("\nData telah tersimpan!\n");
+        sleep(5);
+        main();
     }
     else
     {
         printf("Kontak ini sudah ada dalam daftar!\n\n");
         cek = 0;
-    }
-
-validate_tambah:
-    printf("Tekan 1 untuk kembali tambah dan 0 untuk ke menu \n");
-    printf("Pilihan : ");
-    scanf("%d", &pilihan);
-
-    if (pilihan == 0)
-    {
+        sleep(5);
         main();
-    }
-
-    else if (pilihan == 1)
-    {
-        tambah_kontak();
-    }
-
-    else
-    {
-        printf("Inputan invalid!\n");
-        goto validate_tambah;
     }
 }
 
@@ -115,32 +100,15 @@ void tampil_kontak()
         {
             printf("Nama  : %s", user[i].nama);
             printf("Nomor : %s\n", user[i].nomor);
+            sleep(5);
+            main();
         }
     }
     if (panjang <= 0)
     {
         printf("Data masih kosong!\n\n");
-    }
-
-validate_tampil:
-    printf("Tekan 1 untuk kembali tambah dan 0 untuk ke menu \n");
-    printf("Pilihan : ");
-    scanf("%d", &pilihan);
-
-    if (pilihan == 0)
-    {
+        sleep(5);
         main();
-    }
-
-    else if (pilihan == 1)
-    {
-        tampil_kontak();
-    }
-
-    else
-    {
-        printf("Inputan invalid!\n");
-        goto validate_tampil;
     }
 }
 
