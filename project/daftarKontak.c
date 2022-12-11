@@ -46,7 +46,6 @@ void tambah_kontak()
 {
     char nama[100], nomor[100];
     int cek = 0;
-    int pilihan;
 
     system("cls");
     printf("=== Tambah Daftar Kontak ===\n");
@@ -90,8 +89,6 @@ void tambah_kontak()
 
 void tampil_kontak()
 {
-    int pilihan;
-
     printf("\n=== Menampilkan Daftar Kontak ===\n\n");
 
     for (int i = 0; i < panjang; i++)
@@ -100,10 +97,10 @@ void tampil_kontak()
         {
             printf("Nama  : %s", user[i].nama);
             printf("Nomor : %s\n", user[i].nomor);
-            sleep(5);
-            main();
         }
     }
+    sleep(2);
+    main();
     if (panjang <= 0)
     {
         printf("Data masih kosong!\n\n");
