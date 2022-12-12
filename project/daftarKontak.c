@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <windows.h>
+#include <conio.h>
 
 struct Kontak
 {
@@ -75,14 +75,14 @@ void tambah_kontak()
         ++panjang;
 
         printf("\nData telah tersimpan!\n");
-        sleep(5);
+        getch();
         main();
     }
     else
     {
         printf("Kontak ini sudah ada dalam daftar!\n\n");
         cek = 0;
-        sleep(5);
+        getch();
         main();
     }
 }
@@ -99,12 +99,12 @@ void tampil_kontak()
             printf("Nomor : %s\n", user[i].nomor);
         }
     }
-    sleep(2);
+    getch();
     main();
     if (panjang <= 0)
     {
         printf("Data masih kosong!\n\n");
-        sleep(5);
+        getch();
         main();
     }
 }
